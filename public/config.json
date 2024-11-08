@@ -1,0 +1,147 @@
+{
+    "anasayfa": {
+        "baslik1": "HELLO, I am",
+        "isim": "EMIR",
+        "baslik2": {
+            "yazilar": [
+                "FRONT END DEVELOPER",
+                "BACK END DEVELOPER",
+                "SOFTWARE DEVELOPER"
+            ]
+        },
+        "resim": "/images/emir.jpeg",
+        "yazi": "As a 21-year-old software developer, I am constantly improving myself in frontend, backend and general software development. My passion for creating user-friendly and aesthetic interfaces is combined with my ability to produce powerful, reliable and scalable solutions on the backend side. I am determined to leave my mark in the digital world by providing innovative and functional solutions at every layer of the code world."
+    },
+  
+    "projeler": [
+        {
+            "projeAd": "swoley-fit",
+            "projeSite": "https://generate-workout.netlify.app/",
+            "projeResimler": [
+                "/images/projeler/swoley-fit.png",
+                "/images/projeler/swoley-fit2.png",
+                "/images/projeler/swoley-fit3.png"
+            ]
+        },
+        {
+            "projeAd": "ilave.com",
+            "projeSite": "https://ilave.ozguryurt.dev/",
+            "projeResimler": [
+                "/images/projeler/ilave1.png",
+                "/images/projeler/ilave2.png",
+                "/images/projeler/ilave3.png",
+                "/images/projeler/ilave4.png"
+                
+            ]
+        },
+        {
+            "projeAd": "Ctis-256 project BILSUP",
+            "projeSite": "-",
+            "projeResimler": [
+                "/images/projeler/bilsup1.png",
+                "/images/projeler/bilsup2.png",
+                "/images/projeler/bilsup3.png",
+                "/images/projeler/bilsup4.png",
+                "/images/projeler/bilsup5.png",
+                "/images/projeler/bilsup6.png",
+                "/images/projeler/bilsup7.png",
+                "/images/projeler/bilsup8.png"
+
+            ]
+        },
+        {
+            "projeAd": "Daily Task Recommender",
+            "projeSite": "-",
+            "projeResimler": [
+                "/images/projeler/task1.png",
+                "/images/projeler/task2.png"
+            ]
+        },
+        {
+            "projeAd": "Moto-market",
+            "projeSite": "-",
+            "projeResimler": [
+                "/images/projeler/moto1.png",
+                "/images/projeler/moto2.png"
+            ]
+        },
+        {
+            "projeAd": "List-app",
+            "projeSite": "-",
+            "projeResimler": [
+                "/images/projeler/list1.png",
+                "/images/projeler/list2.png",
+                "/images/projeler/list3.png"
+            ]
+        }
+      
+    ],
+    "yetenekler": [
+        {
+            "isim": "HTML",
+            "icon": "skill-icons:html"
+        },
+        {
+            "isim": "CSS",
+            "icon": "skill-icons:css"
+        },
+        {
+            "isim": "Javascript",
+            "icon": "skill-icons:javascript"
+        },
+        {
+            "isim": "Bootstrap",
+            "icon": "skill-icons:bootstrap"
+        },
+        {
+            "isim": "TailwindCSS",
+            "icon": "skill-icons:tailwindcss-dark"
+        },
+        {
+            "isim": "React",
+            "icon": "devicon:react"
+        },
+        {
+            "isim": "PHP",
+            "icon": "skill-icons:php-dark"
+        },
+        {
+            "isim": "NodeJS",
+            "icon": "skill-icons:nodejs-dark"
+        },
+     
+        {
+            "isim": "MySQL",
+            "icon": "skill-icons:mysql-dark"
+        },
+        {
+            "isim": "Java",
+            "icon": "skill-icons:java-dark"
+        },
+        {
+            "isim": "C",
+            "icon": "devicon:c"
+        },
+        {
+            "isim": "Python",
+            "icon": "skill-icons:python-dark"
+        }
+    ],
+    "iletisim": [
+        {
+            "name": "Github",
+            "username": "@EmirCtis0",
+            "URL": "https://github.com/EmirCtis0"
+        },
+        {
+            "name": "Linkedin",
+            "username": "@Emirinaner",
+            "URL": "https://www.linkedin.com/in/emir-inaner-a303342a3/"
+        },
+        {
+            "name": "Mail",
+            "username": "emirinaner@gmail.com",
+            "URL": "mailto:emirinaner@gmail.com"
+        }
+    ]
+}

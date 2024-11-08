@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .header-item {
+    @apply dark:text-white text-black no-underline uppercase font-bold text-sm lg:text-lg
+  }
+
+  .header-button {
+    @apply dark:text-white text-black font-bold text-sm lg:text-lg
+  }
+
+  .notfound-text {
+    @apply dark:text-white text-black no-underline font-bold text-sm lg:text-2xl
+  }
+}
+
+:root {
+  --animate-duration: 0.3s !important;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  padding: 0;
+  margin: 0;
+  min-height: 100vh;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.max-line-2 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.border-1 {
+  border-width: 1px;
+}
+
+.blogitem svg:nth-child(2) {
+  transition: transform 0.3s ease;
+}
+
+.blogitem:hover svg:nth-child(2) {
+  transform: translate(0.25rem, 0)
+}
+
+
+.animate-fadeInTop {
+  animation: fadeInTop 0.75s;
+}
+
+@keyframes fadeInTop {
+  from {
+    opacity: 0;
+    transform: translate(0rem, -0.25rem);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate(0rem, 0rem);
+  }
+}
+
+.animate-fadeInUp {
+  animation: fadeInUp 0.5s;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 1;
+    transform: translate(0rem, 0rem);
+  }
+
+  to {
+    opacity: 0;
+    transform: translate(0rem, -0.25rem);
+  }
+}
+
+.animate-loading {
+  animation: loading 2s infinite;
+}
+
+@keyframes loading {
+  50% {
+    opacity: 0.25;
+  }
+}
+
+.notfound-image {
+  width: 15rem;
+  height: auto;
+}
+
+.notfound-image {
+  animation: notfoundimage 4s ease-in-out infinite;
+}
+
+@keyframes notfoundimage {
+  25% {
+    transform: translate(0rem, -0.25rem);
+  }
+
+  50% {
+    transform: translate(0rem, 0rem);
+  }
+
+  75% {
+    transform: translate(0rem, 0.25rem);
+  }
+
+  100% {
+    transform: translate(0rem, 0rem);
+  }
+}
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 992px) {
+  .blob {
+    width: calc(100vh - 30rem) !important;
+    height: calc(100vh - 30rem) !important;
+  }
+}
+
+.blob {
+  background-image: url('/images/emir.jpeg');
+  width: calc(100vh - 25rem);
+  height: calc(100vh - 25rem);
+  background-size: contain; /* Change cover to contain */
+  background-repeat: no-repeat; /* Ensure the image doesn't repeat */
+  -webkit-background-position: center;
+  background-position: center center;
+  margin: 20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  animation: animate 5s ease-in-out infinite;
+  transition: all 1s ease-in-out;
+}
+
+
+@keyframes animate {
+
+  0%,
+  100% {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  }
+
+  50% {
+    border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+  }
+}
+
+
+
+
+.projectcard {
+  cursor: pointer;
+  transition: all 0.5s ease;
+  position: relative;
+}
+
+.projectcard:after {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  display: block;
+  content: '';
+  border: 1px solid #ccc;
+  transform: scaleX(0);
+  transition: transform 0.5s ease-in-out;
+}
+
+.projectcard:after {
+  transform-origin: 100% 50%;
+}
+
+.projectcard:hover:after {
+  transform: scaleX(1);
+  transform-origin: 0% 50%;
+}
+
+
+
+
+
+
+.skillbox {
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.skillbox div:nth-child(1) {
+  transition: all 0.3s ease;
+}
+
+.skillbox div:nth-child(2) {
+  transition: all 0.3s ease;
+  opacity: 0;
+  position: absolute;
+  bottom: -20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.skillbox:hover div:nth-child(1) {
+  transform: translateY(-1rem);
+}
+
+.skillbox:hover div:nth-child(2) {
+  opacity: 1;
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+.contactbox {
+  display: grid;
+  grid-auto-flow: row dense;
+  grid-template-columns: 0.5fr 1.5fr;
+  gap: 10px;
+  transition: all 0.3s ease;
+}
+
+.contactbox:hover {
+  transform: translateY(-0.3rem);
+}
+
+
+
+
+
+@media screen and (max-width: 1024px) {
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: none !important;
+  }
+}
+
+
+
+
+
+
+
+@keyframes downToUp {
+  0% {
+    opacity: 0;
+    top: 0;
+  }
+
+  50% {
+    opacity: 1;
+    top: 50%;
+  }
+
+  100% {
+    opacity: 0;
+    top: 80%;
+  }
+}
+
+.icon-animation {
+  animation: downToUp var(--time) linear none infinite;
+}
