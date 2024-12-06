@@ -21,7 +21,8 @@
                 "/images/projeler/swoley-fit.png",
                 "/images/projeler/swoley-fit2.png",
                 "/images/projeler/swoley-fit3.png"
-            ]
+            ],
+            "projeExp":"This is a detailed training generator application which gives training programs according to users goals."
         },
         {
             "projeAd": "ilave.com",
@@ -32,7 +33,9 @@
                 "/images/projeler/ilave3.png",
                 "/images/projeler/ilave4.png"
                 
-            ]
+            ],
+            "projeExp":"Ilave is an both online event finder and event advertisement site. Users might give advertisements for their activities with a shortage of people or search for listings to be part of an event."
+
         },
         {
             "projeAd": "Ctis-256 project BILSUP",
@@ -47,7 +50,8 @@
                 "/images/projeler/bilsup7.png",
                 "/images/projeler/bilsup8.png"
 
-            ]
+            ],
+            "projeExp":"BILSUP is an online supplement shop. It allows both local market owners to create a store and customers to purchase supplements filtered by locations."
         },
         {
             "projeAd": "Daily Task Recommender",

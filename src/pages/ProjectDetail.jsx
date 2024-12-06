@@ -60,6 +60,9 @@ const ProjectDetail = () => {
                         })
                       }
                     </Swiper>
+                    <div className='text-white text-center text-xl font-bold'>
+                      {siteData?.projeler[id]?.projeExp}
+                    </div>
                   </>
               }
             </div>
