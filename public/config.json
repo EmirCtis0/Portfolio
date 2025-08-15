@@ -37,6 +37,18 @@
             "projeExp":"Ilave is a both online event finder and event advertisement site. Users might give advertisements for their activities with a shortage of people or search for listings to be part of an event."
 
         },
+         {
+            "projeAd": "Weather App",
+            "projeSite": "-",
+            "projeResimler": [
+                "/images/projeler/weather_app1.png",
+                "/images/projeler/weather_app2.png"
+                
+                
+            ],
+            "projeExp":"This project fetches and displays data from an external REST API using React with a single search input."
+
+        },
         {
             "projeAd": "Ctis-256 project BILSUP",
             "projeSite": "-",
