@@ -14,6 +14,17 @@
     },
   
     "projeler": [
+         {
+            "projeAd": "WhatToWatch",
+            "projeSite": "https://whattowatchh.netlify.app/",
+            "projeResimler": [
+                "/images/projeler/wtw1.png",
+                "/images/projeler/wtw2.png",
+                "/images/projeler/mockups.png",
+                "/images/projeler/wtw4.png"
+            ],
+            "projeExp":"WhatToWatch is a movie and series recommendation platform that helps users discover new content. It offers a user-friendly and responsive interface for searching, viewing details, and creating personal watchlists. The project is still under development, and I am actively working on adding new features & fixing bugs."
+        },
         {
             "projeAd": "swoley-fit",
             "projeSite": "https://generate-workout.netlify.app/",
