@@ -1,4 +1,4 @@
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useNavigate, useLocation } from "react-router-dom";
 
 import { MdDarkMode, MdLightMode, MdMenu } from "react-icons/md";
 import { IoMdClose } from "react-icons/io";
@@ -16,6 +16,10 @@ function Header() {
             text: "SKILLS"
         },
         {
+            to: "/experiences",
+            text: "EXPERIENCE"
+        },
+        {
             to: "/projeler",
             text: "PROJECTS"
         },
@@ -27,6 +31,7 @@ function Header() {
 
 
     const navigate = useNavigate()
+    const location = useLocation()
 
     const [theme, setTheme] = useState("dark");
     const [mobileMenuStatus, setMobileMenuStatus] = useState(false);
@@ -59,6 +64,11 @@ function Header() {
         }
     }, [])
 
+    // Close mobile menu when route changes
+    useEffect(() => {
+        setMobileMenuStatus(false)
+    }, [location.pathname])
+
     const handleThemeChangeButton = () => {
         switch (theme) {
             case "dark":
@@ -71,23 +81,36 @@ function Header() {
     }
 
     const handleLogoClick = () => {
-        navigate(0)
+        navigate("/")
     }
 
     const handleMobileMenu = () => {
         setMobileMenuStatus((mobileMenuStatus) => (!mobileMenuStatus))
     }
 
+    const closeMobileMenu = () => {
+        setMobileMenuStatus(false)
+    }
+
     return (
         <>
-            <div className="fixed dark:bg-zinc-900 bg-neutral-100 w-full p-2 lg:p-8 shadow-lg z-20">
+            <div className="fixed dark:bg-zinc-900 bg-neutral-100 w-full p-4 lg:p-8 shadow-lg z-20">
                 {
                     mobileMenuStatus ?
                         <>
-                            <div className="fixed dark:bg-zinc-900 bg-neutral-100 w-full p-2 lg:p-8 shadow-lg right-0 top-6 z-10 animate-fadeInTop">
-                                <div className="w-full flex flex-col justify-start items-center gap-2">
+                            <div className="fixed dark:bg-zinc-900 bg-neutral-100 w-full p-4 lg:p-8 shadow-lg right-0 top-14 z-10 animate-fadeInTop">
+                                <div className="w-full flex flex-col justify-start items-center gap-2 py-4">
                                     {
-                                        routes.map((route, index) => <Link key={index} className="header-item" to={route.to}>{route.text}</Link>)
+                                        routes.map((route, index) => (
+                                            <Link
+                                                key={index}
+                                                className="header-item"
+                                                to={route.to}
+                                                onClick={closeMobileMenu}
+                                            >
+                                                {route.text}
+                                            </Link>
+                                        ))
                                     }
                                 </div>
                             </div>

@@ -18,6 +18,7 @@ import { Provider } from 'react-redux'
 import MainLayout from './layouts/MainLayout.jsx'
 import MainPage from './pages/MainPage.jsx';
 import Skills from './pages/Skills.jsx';
+import Experiences from './pages/Experiences.jsx';
 import Projects from './pages/Projects.jsx'
 import ProjectDetail from './pages/ProjectDetail.jsx'
 import ContactPage from './pages/ContactPage.jsx';
@@ -36,6 +37,10 @@ const router = createBrowserRouter([
       {
         path: '/yetenekler',
         element: <Skills />
+      },
+      {
+        path: '/experiences',
+        element: <Experiences />
       },
       {
         path: '/projeler',
