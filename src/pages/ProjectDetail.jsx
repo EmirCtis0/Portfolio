@@ -48,13 +48,13 @@ const ProjectDetail = () => {
                       navigation
                       modules={[Pagination, Navigation]}
                       pagination={{ clickable: true }}
-                      className='w-[90vw] animate-fadeInTop'
+                      className='w-full max-w-sm md:max-w-lg animate-fadeInTop'
                     >
                       {
                         siteData?.projeler[id]?.projeResimler?.map(function (image, index) {
                           return (
-                            <SwiperSlide key={index}>
-                              <img src={image} alt="" className='rounded' />
+                            <SwiperSlide key={index} className='flex justify-center items-center py-6'>
+                              <img src={image} alt="" className='rounded mx-auto max-h-[70vh] w-auto object-contain' />
                             </SwiperSlide>
                           )
                         })

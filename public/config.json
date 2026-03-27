@@ -12,9 +12,20 @@
         "resim": "/images/emir.jpeg",
         "yazi": "As a 21-year-old software developer, I am constantly improving myself in frontend, backend and general software development. My passion for creating user-friendly and aesthetic interfaces is combined with my ability to produce powerful, reliable and scalable solutions on the backend side. I am determined to leave my mark in the digital world by providing innovative and functional solutions at every layer of the code world."
     },
-  
     "projeler": [
-         {
+        {
+            "projeAd": "Ortak - Taxi Sharing",
+            "projeSite": "-",
+            "projeResimler": [
+                "/images/projeler/ortak5.png",
+                "/images/projeler/ortak3.png",
+                "/images/projeler/ortak2.png",
+                "/images/projeler/ortak4.png",
+                "/images/projeler/ortak1.png"
+            ],
+            "projeExp": "Ortak is a mobile taxi-sharing application built with React Native and Expo. Users heading to the same destination can find each other, share a taxi, and split the fare. Features include route creation, passenger matching, real-time listings, gender preference filters, and in-app messaging."
+        },
+        {
             "projeAd": "WhatToWatch",
             "projeSite": "https://whattowatchh.netlify.app/",
             "projeResimler": [
@@ -23,7 +34,7 @@
                 "/images/projeler/mockups.png",
                 "/images/projeler/wtw4.png"
             ],
-            "projeExp":"WhatToWatch is a movie and series recommendation platform that helps users discover new content. It offers a user-friendly and responsive interface for searching, viewing details, and creating personal watchlists. The project is still under development, and I am actively working on adding new features & fixing bugs."
+            "projeExp": "WhatToWatch is a movie and series recommendation platform that helps users discover new content. It offers a user-friendly and responsive interface for searching, viewing details, and creating personal watchlists. The project is still under development, and I am actively working on adding new features & fixing bugs."
         },
         {
             "projeAd": "swoley-fit",
@@ -33,7 +44,7 @@
                 "/images/projeler/swoley-fit2.png",
                 "/images/projeler/swoley-fit3.png"
             ],
-            "projeExp":"This is a detailed training generator application which gives training programs according to users goals."
+            "projeExp": "This is a detailed training generator application which gives training programs according to users goals."
         },
         {
             "projeAd": "ilave.com",
@@ -43,22 +54,17 @@
                 "/images/projeler/ilave2.png",
                 "/images/projeler/ilave3.png",
                 "/images/projeler/ilave4.png"
-                
             ],
-            "projeExp":"Ilave is a both online event finder and event advertisement site. Users might give advertisements for their activities with a shortage of people or search for listings to be part of an event."
-
+            "projeExp": "Ilave is a both online event finder and event advertisement site. Users might give advertisements for their activities with a shortage of people or search for listings to be part of an event."
         },
-         {
+        {
             "projeAd": "Weather App",
             "projeSite": "-",
             "projeResimler": [
                 "/images/projeler/weather_app1.png",
                 "/images/projeler/weather_app2.png"
-                
-                
             ],
-            "projeExp":"This project fetches and displays data from an external REST API using React with a single search input."
-
+            "projeExp": "This project fetches and displays data from an external REST API using React with a single search input."
         },
         {
             "projeAd": "Ctis-256 project BILSUP",
@@ -72,9 +78,8 @@
                 "/images/projeler/bilsup6.png",
                 "/images/projeler/bilsup7.png",
                 "/images/projeler/bilsup8.png"
-
             ],
-            "projeExp":"BILSUP is an online supplement shop. It allows both local market owners to create a store and customers to purchase supplements filtered by locations."
+            "projeExp": "BILSUP is an online supplement shop. It allows both local market owners to create a store and customers to purchase supplements filtered by locations."
         },
         {
             "projeAd": "Daily Task Recommender",
@@ -101,7 +106,6 @@
                 "/images/projeler/list3.png"
             ]
         }
-      
     ],
     "yetenekler": [
         {
@@ -136,7 +140,6 @@
             "isim": "NodeJS",
             "icon": "skill-icons:nodejs-dark"
         },
-     
         {
             "isim": "MySQL",
             "icon": "skill-icons:mysql-dark"
