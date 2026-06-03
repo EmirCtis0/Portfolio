@@ -35,6 +35,7 @@ const Projects = () => {
                   index={index}
                   projectName={data.projeAd}
                   projectImages={data.projeResimler}
+                  projectCover={data.projeKapak}
                 />
               ))
             ) : (

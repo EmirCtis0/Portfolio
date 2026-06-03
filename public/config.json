@@ -114,7 +114,8 @@
         "projeler": [
             {
                 "projeAd": "Ortak - Taxi Sharing",
-                "projeSite": "-",
+                "projeSite": "https://ortak.live/",
+                "projeKapak": "/images/projeler/ortak-landing.png",
                 "projeResimler": [
                     "/images/projeler/ortak5.png",
                     "/images/projeler/ortak3.png",
@@ -389,7 +390,8 @@
         "projeler": [
             {
                 "projeAd": "Ortak - Taxi Sharing",
-                "projeSite": "-",
+                "projeSite": "https://ortak.live/",
+                "projeKapak": "/images/projeler/ortak-landing.png",
                 "projeResimler": [
                     "/images/projeler/ortak5.png",
                     "/images/projeler/ortak3.png",

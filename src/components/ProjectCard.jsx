@@ -16,7 +16,7 @@ import { Link } from 'react-router-dom';
 
 import ProjectsImage from './ProjectsImage';
 
-const ProjectCard = ({ id, projectName, projectImages, index }) => {
+const ProjectCard = ({ id, projectName, projectImages, projectCover, index }) => {
 
     const handleClick = () => {
         SweetAlert.fire({
@@ -70,7 +70,7 @@ const ProjectCard = ({ id, projectName, projectImages, index }) => {
             <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-indigo-500/10 to-purple-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
 
             <div className="relative w-full aspect-video overflow-hidden rounded-xl bg-zinc-100 dark:bg-zinc-700 flex items-center justify-center">
-                <ProjectsImage src={projectImages[0]} />
+                <ProjectsImage src={projectCover || projectImages[0]} />
             </div>
 
             <span className="relative text-zinc-600 dark:text-zinc-300 text-base font-bold uppercase group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors duration-300 text-center">
