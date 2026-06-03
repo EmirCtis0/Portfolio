@@ -6,6 +6,7 @@ const Projects = () => {
 
   const siteData = useSelector(state => state.siteData.value)
   const siteDataIsLoading = useSelector(state => state.siteData.isLoading)
+  const page = siteData?.ui?.projects
 
   return (
     <div className="dark:bg-zinc-900 bg-neutral-100 w-full lg:px-16 py-28 px-8 min-h-screen">
@@ -13,16 +14,16 @@ const Projects = () => {
         {/* Page Header */}
         <div className="text-center mb-16 animate-fadeInTop">
           <h1 className="text-4xl lg:text-5xl font-bold text-zinc-800 dark:text-white mb-4">
-            My <span className="text-indigo-600">Projects</span>
+            {page?.titlePrefix || "My"} <span className="text-indigo-600">{page?.titleHighlight || "Projects"}</span>
           </h1>
           <p className="text-zinc-500 dark:text-zinc-400 text-lg">
-            A collection of my work and side projects
+            {page?.description || "A collection of my work and side projects"}
           </p>
         </div>
 
         {siteDataIsLoading ? (
           <div className="flex justify-center items-center py-20">
-            <div className="text-zinc-500 dark:text-zinc-400">Loading...</div>
+            <div className="text-zinc-500 dark:text-zinc-400">{siteData?.ui?.common?.loading || "Loading..."}</div>
           </div>
         ) : (
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -37,7 +38,7 @@ const Projects = () => {
                 />
               ))
             ) : (
-              <p className='text-center dark:text-white text-black col-span-full'>No projects found.</p>
+              <p className='text-center dark:text-white text-black col-span-full'>{page?.empty || "No projects found."}</p>
             )}
           </div>
         )}

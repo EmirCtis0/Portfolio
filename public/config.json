@@ -1,177 +1,552 @@
 {
-    "anasayfa": {
-        "baslik1": "HELLO, I am",
-        "isim": "EMIR",
-        "baslik2": {
-            "yazilar": [
-                "FRONT END DEVELOPER",
-                "BACK END DEVELOPER",
-                "SOFTWARE DEVELOPER"
-            ]
+    "en": {
+        "ui": {
+            "common": {
+                "loading": "Loading..."
+            },
+            "notFound": {
+                "message": "The page you are looking for was not found."
+            },
+            "header": {
+                "settings": {
+                    "title": "Settings",
+                    "language": "Language",
+                    "theme": "Theme",
+                    "light": "Light",
+                    "dark": "Dark"
+                },
+                "routes": [
+                    {
+                        "to": "/",
+                        "text": "HOME PAGE"
+                    },
+                    {
+                        "to": "/yetenekler",
+                        "text": "SKILLS"
+                    },
+                    {
+                        "to": "/experiences",
+                        "text": "EXPERIENCE"
+                    },
+                    {
+                        "to": "/projeler",
+                        "text": "PROJECTS"
+                    },
+                    {
+                        "to": "/iletisim",
+                        "text": "CONTACT INFO"
+                    }
+                ]
+            },
+            "skills": {
+                "titlePrefix": "Skills &",
+                "titleHighlight": "Technologies",
+                "description": "Tools and technologies I work with",
+                "empty": "No skills found."
+            },
+            "experiences": {
+                "titlePrefix": "Work",
+                "titleHighlight": "Experience",
+                "description": "My professional journey and the skills I have developed along the way"
+            },
+            "projects": {
+                "titlePrefix": "My",
+                "titleHighlight": "Projects",
+                "description": "A collection of my work and side projects",
+                "empty": "No projects found."
+            },
+            "contact": {
+                "titlePrefix": "Get in",
+                "titleHighlight": "Touch",
+                "description": "Feel free to reach out through any of these platforms"
+            }
         },
-        "resim": "/images/emir.jpeg",
-        "yazi": "As a 21-year-old software developer, I am constantly improving myself in frontend, backend and general software development. My passion for creating user-friendly and aesthetic interfaces is combined with my ability to produce powerful, reliable and scalable solutions on the backend side. I am determined to leave my mark in the digital world by providing innovative and functional solutions at every layer of the code world."
+        "anasayfa": {
+            "baslik1": "HELLO, I am",
+            "isim": "EMIR",
+            "baslik2": {
+                "yazilar": [
+                    "FRONT END DEVELOPER",
+                    "BACK END DEVELOPER",
+                    "SOFTWARE DEVELOPER"
+                ]
+            },
+            "resim": "/images/emir.jpeg",
+            "yazi": "As a 21-year-old software developer, I am constantly improving myself in frontend, backend and general software development. My passion for creating user-friendly and aesthetic interfaces is combined with my ability to produce powerful, reliable and scalable solutions on the backend side. I am determined to leave my mark in the digital world by providing innovative and functional solutions at every layer of the code world."
+        },
+        "deneyimler": [
+            {
+                "title": "Part Time React Native Developer",
+                "company": "Fugevet",
+                "location": "Ankara, Turkey",
+                "period": "Oct 2025 - Feb 2026",
+                "responsibilities": [
+                    "React Native Developer building cross-platform mobile applications using Expo framework for streamlined development and deployment.",
+                    "Developing complex veterinary CRM mobile interfaces with advanced data handling, forms, and seamless API integrations.",
+                    "Utilizing Postman for API testing and validation, ensuring reliable frontend-backend communication.",
+                    "Experience with React for web development alongside primary focus on mobile development with React Native."
+                ]
+            },
+            {
+                "title": "Full-Stack Development Intern",
+                "company": "Belsis",
+                "location": "Ankara, Turkey",
+                "period": "Jan - May 2025",
+                "responsibilities": [
+                    "Worked on modernizing municipality-focused legacy systems within the Belsis-Net V2 project by converting classic ASP and VBScript-based applications to a modern tech stack using HTML, JavaScript, jQuery, and Kendo UI with the MVVM pattern.",
+                    "Tasks included transforming payroll modules, subscription systems, tax calculations, and other administrative interfaces into responsive, cross-browser compatible web applications.",
+                    "Participated in Agile ceremonies such as daily scrums and bi-weekly sprint meetings and contributed to team-wide documentation and bug testing efforts.",
+                    "Gained hands-on experience in full-stack development, Agile workflows, version control (GitLab), and enterprise-level software maintenance."
+                ]
+            },
+            {
+                "title": "Full-Stack Development Intern",
+                "company": "Ordinatrum",
+                "location": "Istanbul, Turkey",
+                "period": "July - Aug 2024",
+                "responsibilities": [
+                    "Designed, developed, and maintained web applications using ASP.NET MVC.",
+                    "Responsibilities included creating and managing views, controllers, and models, ensuring seamless frontend-backend integration.",
+                    "Collaborated with team members to implement features, optimize performance, and follow best coding practices."
+                ]
+            }
+        ],
+        "projeler": [
+            {
+                "projeAd": "Ortak - Taxi Sharing",
+                "projeSite": "-",
+                "projeResimler": [
+                    "/images/projeler/ortak5.png",
+                    "/images/projeler/ortak3.png",
+                    "/images/projeler/ortak2.png",
+                    "/images/projeler/ortak4.png",
+                    "/images/projeler/ortak1.png"
+                ],
+                "projeExp": "Ortak is a mobile taxi-sharing application built with React Native and Expo. Users heading to the same destination can find each other, share a taxi, and split the fare. Features include route creation, passenger matching, real-time listings, gender preference filters, and in-app messaging."
+            },
+            {
+                "projeAd": "WhatToWatch",
+                "projeSite": "https://whattowatchh.netlify.app/",
+                "projeResimler": [
+                    "/images/projeler/wtw1.png",
+                    "/images/projeler/wtw2.png",
+                    "/images/projeler/mockups.png",
+                    "/images/projeler/wtw4.png"
+                ],
+                "projeExp": "WhatToWatch is a movie and series recommendation platform that helps users discover new content. It offers a user-friendly and responsive interface for searching, viewing details, and creating personal watchlists. The project is still under development, and I am actively working on adding new features and fixing bugs."
+            },
+            {
+                "projeAd": "swoley-fit",
+                "projeSite": "https://generate-workout.netlify.app/",
+                "projeResimler": [
+                    "/images/projeler/swoley-fit.png",
+                    "/images/projeler/swoley-fit2.png",
+                    "/images/projeler/swoley-fit3.png"
+                ],
+                "projeExp": "This is a detailed training generator application that creates training programs according to users' goals."
+            },
+            {
+                "projeAd": "ilave.com",
+                "projeSite": "https://ilave.ozguryurt.dev/",
+                "projeResimler": [
+                    "/images/projeler/ilave1.png",
+                    "/images/projeler/ilave2.png",
+                    "/images/projeler/ilave3.png",
+                    "/images/projeler/ilave4.png"
+                ],
+                "projeExp": "Ilave is both an online event finder and an event advertisement site. Users can post advertisements for activities that need more participants or search listings to join an event."
+            },
+            {
+                "projeAd": "Weather App",
+                "projeSite": "-",
+                "projeResimler": [
+                    "/images/projeler/weather_app1.png",
+                    "/images/projeler/weather_app2.png"
+                ],
+                "projeExp": "This project fetches and displays data from an external REST API using React with a single search input."
+            },
+            {
+                "projeAd": "Ctis-256 project BILSUP",
+                "projeSite": "-",
+                "projeResimler": [
+                    "/images/projeler/bilsup1.png",
+                    "/images/projeler/bilsup2.png",
+                    "/images/projeler/bilsup3.png",
+                    "/images/projeler/bilsup4.png",
+                    "/images/projeler/bilsup5.png",
+                    "/images/projeler/bilsup6.png",
+                    "/images/projeler/bilsup7.png",
+                    "/images/projeler/bilsup8.png"
+                ],
+                "projeExp": "BILSUP is an online supplement shop. It allows local market owners to create a store and customers to purchase supplements filtered by location."
+            },
+            {
+                "projeAd": "Daily Task Recommender",
+                "projeSite": "-",
+                "projeResimler": [
+                    "/images/projeler/task1.png",
+                    "/images/projeler/task2.png"
+                ]
+            },
+            {
+                "projeAd": "Moto-market",
+                "projeSite": "-",
+                "projeResimler": [
+                    "/images/projeler/moto1.png",
+                    "/images/projeler/moto2.png"
+                ]
+            },
+            {
+                "projeAd": "List-app",
+                "projeSite": "-",
+                "projeResimler": [
+                    "/images/projeler/list1.png",
+                    "/images/projeler/list2.png",
+                    "/images/projeler/list3.png"
+                ]
+            }
+        ],
+        "yetenekler": [
+            {
+                "isim": "HTML",
+                "icon": "skill-icons:html"
+            },
+            {
+                "isim": "CSS",
+                "icon": "skill-icons:css"
+            },
+            {
+                "isim": "Javascript",
+                "icon": "skill-icons:javascript"
+            },
+            {
+                "isim": "Bootstrap",
+                "icon": "skill-icons:bootstrap"
+            },
+            {
+                "isim": "TailwindCSS",
+                "icon": "skill-icons:tailwindcss-dark"
+            },
+            {
+                "isim": "React",
+                "icon": "devicon:react"
+            },
+            {
+                "isim": "PHP",
+                "icon": "skill-icons:php-dark"
+            },
+            {
+                "isim": "NodeJS",
+                "icon": "skill-icons:nodejs-dark"
+            },
+            {
+                "isim": "MySQL",
+                "icon": "skill-icons:mysql-dark"
+            },
+            {
+                "isim": "Java",
+                "icon": "skill-icons:java-dark"
+            },
+            {
+                "isim": "C",
+                "icon": "devicon:c"
+            },
+            {
+                "isim": "Python",
+                "icon": "skill-icons:python-dark"
+            }
+        ],
+        "iletisim": [
+            {
+                "name": "Github",
+                "username": "@EmirCtis0",
+                "URL": "https://github.com/EmirCtis0"
+            },
+            {
+                "name": "Linkedin",
+                "username": "@Emirinaner",
+                "URL": "https://www.linkedin.com/in/emir-inaner-a303342a3/"
+            },
+            {
+                "name": "Mail",
+                "username": "emirinaner@gmail.com",
+                "URL": "mailto:emirinaner@gmail.com"
+            }
+        ]
     },
-    "projeler": [
-        {
-            "projeAd": "Ortak - Taxi Sharing",
-            "projeSite": "-",
-            "projeResimler": [
-                "/images/projeler/ortak5.png",
-                "/images/projeler/ortak3.png",
-                "/images/projeler/ortak2.png",
-                "/images/projeler/ortak4.png",
-                "/images/projeler/ortak1.png"
-            ],
-            "projeExp": "Ortak is a mobile taxi-sharing application built with React Native and Expo. Users heading to the same destination can find each other, share a taxi, and split the fare. Features include route creation, passenger matching, real-time listings, gender preference filters, and in-app messaging."
+    "tr": {
+        "ui": {
+            "common": {
+                "loading": "Yükleniyor..."
+            },
+            "notFound": {
+                "message": "Aradığınız sayfa bulunamadı."
+            },
+            "header": {
+                "settings": {
+                    "title": "Ayarlar",
+                    "language": "Dil",
+                    "theme": "Tema",
+                    "light": "Açık",
+                    "dark": "Koyu"
+                },
+                "routes": [
+                    {
+                        "to": "/",
+                        "text": "ANA SAYFA"
+                    },
+                    {
+                        "to": "/yetenekler",
+                        "text": "YETENEKLER"
+                    },
+                    {
+                        "to": "/experiences",
+                        "text": "DENEYİM"
+                    },
+                    {
+                        "to": "/projeler",
+                        "text": "PROJELER"
+                    },
+                    {
+                        "to": "/iletisim",
+                        "text": "İLETİŞİM"
+                    }
+                ]
+            },
+            "skills": {
+                "titlePrefix": "Yetenekler &",
+                "titleHighlight": "Teknolojiler",
+                "description": "Çalıştığım araçlar ve teknolojiler",
+                "empty": "Yetenek bulunamadı."
+            },
+            "experiences": {
+                "titlePrefix": "İş",
+                "titleHighlight": "Deneyimi",
+                "description": "Profesyonel yolculuğum ve bu süreçte geliştirdiğim yetenekler"
+            },
+            "projects": {
+                "titlePrefix": "Projelerim",
+                "titleHighlight": "",
+                "description": "Çalışmalarımdan ve yan projelerimden bir seçki",
+                "empty": "Proje bulunamadı."
+            },
+            "contact": {
+                "titlePrefix": "İletişime",
+                "titleHighlight": "Geç",
+                "description": "Bu platformlardan bana ulaşabilirsin"
+            }
         },
-        {
-            "projeAd": "WhatToWatch",
-            "projeSite": "https://whattowatchh.netlify.app/",
-            "projeResimler": [
-                "/images/projeler/wtw1.png",
-                "/images/projeler/wtw2.png",
-                "/images/projeler/mockups.png",
-                "/images/projeler/wtw4.png"
-            ],
-            "projeExp": "WhatToWatch is a movie and series recommendation platform that helps users discover new content. It offers a user-friendly and responsive interface for searching, viewing details, and creating personal watchlists. The project is still under development, and I am actively working on adding new features & fixing bugs."
+        "anasayfa": {
+            "baslik1": "MERHABA, ben",
+            "isim": "EMIR",
+            "baslik2": {
+                "yazilar": [
+                    "FRONT END GELİŞTİRİCİ",
+                    "BACK END GELİŞTİRİCİ",
+                    "YAZILIM GELİŞTİRİCİ"
+                ]
+            },
+            "resim": "/images/emir.jpeg",
+            "yazi": "21 yaşında bir yazılım geliştirici olarak frontend, backend ve genel yazılım geliştirme alanlarında kendimi sürekli geliştiriyorum. Kullanıcı dostu ve estetik arayüzler üretme tutkum, backend tarafında güçlü, güvenilir ve ölçeklenebilir çözümler geliştirme becerimle birleşiyor. Kod dünyasının her katmanında yenilikçi ve işlevsel çözümler üreterek dijital dünyada iz bırakmaya kararlıyım."
         },
-        {
-            "projeAd": "swoley-fit",
-            "projeSite": "https://generate-workout.netlify.app/",
-            "projeResimler": [
-                "/images/projeler/swoley-fit.png",
-                "/images/projeler/swoley-fit2.png",
-                "/images/projeler/swoley-fit3.png"
-            ],
-            "projeExp": "This is a detailed training generator application which gives training programs according to users goals."
-        },
-        {
-            "projeAd": "ilave.com",
-            "projeSite": "https://ilave.ozguryurt.dev/",
-            "projeResimler": [
-                "/images/projeler/ilave1.png",
-                "/images/projeler/ilave2.png",
-                "/images/projeler/ilave3.png",
-                "/images/projeler/ilave4.png"
-            ],
-            "projeExp": "Ilave is a both online event finder and event advertisement site. Users might give advertisements for their activities with a shortage of people or search for listings to be part of an event."
-        },
-        {
-            "projeAd": "Weather App",
-            "projeSite": "-",
-            "projeResimler": [
-                "/images/projeler/weather_app1.png",
-                "/images/projeler/weather_app2.png"
-            ],
-            "projeExp": "This project fetches and displays data from an external REST API using React with a single search input."
-        },
-        {
-            "projeAd": "Ctis-256 project BILSUP",
-            "projeSite": "-",
-            "projeResimler": [
-                "/images/projeler/bilsup1.png",
-                "/images/projeler/bilsup2.png",
-                "/images/projeler/bilsup3.png",
-                "/images/projeler/bilsup4.png",
-                "/images/projeler/bilsup5.png",
-                "/images/projeler/bilsup6.png",
-                "/images/projeler/bilsup7.png",
-                "/images/projeler/bilsup8.png"
-            ],
-            "projeExp": "BILSUP is an online supplement shop. It allows both local market owners to create a store and customers to purchase supplements filtered by locations."
-        },
-        {
-            "projeAd": "Daily Task Recommender",
-            "projeSite": "-",
-            "projeResimler": [
-                "/images/projeler/task1.png",
-                "/images/projeler/task2.png"
-            ]
-        },
-        {
-            "projeAd": "Moto-market",
-            "projeSite": "-",
-            "projeResimler": [
-                "/images/projeler/moto1.png",
-                "/images/projeler/moto2.png"
-            ]
-        },
-        {
-            "projeAd": "List-app",
-            "projeSite": "-",
-            "projeResimler": [
-                "/images/projeler/list1.png",
-                "/images/projeler/list2.png",
-                "/images/projeler/list3.png"
-            ]
-        }
-    ],
-    "yetenekler": [
-        {
-            "isim": "HTML",
-            "icon": "skill-icons:html"
-        },
-        {
-            "isim": "CSS",
-            "icon": "skill-icons:css"
-        },
-        {
-            "isim": "Javascript",
-            "icon": "skill-icons:javascript"
-        },
-        {
-            "isim": "Bootstrap",
-            "icon": "skill-icons:bootstrap"
-        },
-        {
-            "isim": "TailwindCSS",
-            "icon": "skill-icons:tailwindcss-dark"
-        },
-        {
-            "isim": "React",
-            "icon": "devicon:react"
-        },
-        {
-            "isim": "PHP",
-            "icon": "skill-icons:php-dark"
-        },
-        {
-            "isim": "NodeJS",
-            "icon": "skill-icons:nodejs-dark"
-        },
-        {
-            "isim": "MySQL",
-            "icon": "skill-icons:mysql-dark"
-        },
-        {
-            "isim": "Java",
-            "icon": "skill-icons:java-dark"
-        },
-        {
-            "isim": "C",
-            "icon": "devicon:c"
-        },
-        {
-            "isim": "Python",
-            "icon": "skill-icons:python-dark"
-        }
-    ],
-    "iletisim": [
-        {
-            "name": "Github",
-            "username": "@EmirCtis0",
-            "URL": "https://github.com/EmirCtis0"
-        },
-        {
-            "name": "Linkedin",
-            "username": "@Emirinaner",
-            "URL": "https://www.linkedin.com/in/emir-inaner-a303342a3/"
-        },
-        {
-            "name": "Mail",
-            "username": "emirinaner@gmail.com",
-            "URL": "mailto:emirinaner@gmail.com"
-        }
-    ]
+        "deneyimler": [
+            {
+                "title": "Part Time React Native Developer",
+                "company": "Fugevet",
+                "location": "Ankara, Türkiye",
+                "period": "Eki 2025 - Şub 2026",
+                "responsibilities": [
+                    "Expo framework kullanarak geliştirme ve dağıtım süreçleri daha düzenli olan çapraz platform mobil uygulamalar geliştirdim.",
+                    "Gelişmiş veri yönetimi, formlar ve sorunsuz API entegrasyonları içeren veteriner CRM mobil arayüzleri üzerinde çalıştım.",
+                    "Frontend ve backend arasındaki iletişimin güvenilirliğini sağlamak için Postman ile API testleri ve doğrulamaları yaptım.",
+                    "React Native odaklı mobil geliştirmenin yanında React ile web geliştirme deneyimi kazandım."
+                ]
+            },
+            {
+                "title": "Full-Stack Development Intern",
+                "company": "Belsis",
+                "location": "Ankara, Türkiye",
+                "period": "Oca - May 2025",
+                "responsibilities": [
+                    "Belsis-Net V2 projesinde belediye odaklı legacy sistemlerin modernleştirilmesi için klasik ASP ve VBScript tabanlı uygulamaları HTML, JavaScript, jQuery ve Kendo UI kullanarak MVVM mimarisiyle güncel teknoloji yapısına dönüştürdüm.",
+                    "Bordro modülleri, abonelik sistemleri, vergi hesaplamaları ve farklı idari arayüzlerin responsive ve tarayıcı uyumlu web uygulamalarına dönüştürülmesinde görev aldım.",
+                    "Daily scrum ve iki haftalık sprint toplantıları gibi Agile süreçlere katıldım; dokümantasyon ve hata testleri süreçlerine katkı sağladım.",
+                    "Full-stack geliştirme, Agile iş akışları, versiyon kontrolü (GitLab) ve kurumsal yazılım bakımı konularında uygulamalı deneyim kazandım."
+                ]
+            },
+            {
+                "title": "Full-Stack Development Intern",
+                "company": "Ordinatrum",
+                "location": "İstanbul, Türkiye",
+                "period": "Tem - Ağu 2024",
+                "responsibilities": [
+                    "ASP.NET MVC kullanarak web uygulamaları tasarladım, geliştirdim ve bakımını yaptım.",
+                    "View, controller ve model yapılarının oluşturulması ve yönetilmesiyle frontend-backend entegrasyonunun sorunsuz ilerlemesine katkı sağladım.",
+                    "Ekip arkadaşlarımla birlikte yeni özellikler geliştirdim, performans iyileştirmeleri yaptım ve iyi kod yazma pratiklerini takip ettim."
+                ]
+            }
+        ],
+        "projeler": [
+            {
+                "projeAd": "Ortak - Taxi Sharing",
+                "projeSite": "-",
+                "projeResimler": [
+                    "/images/projeler/ortak5.png",
+                    "/images/projeler/ortak3.png",
+                    "/images/projeler/ortak2.png",
+                    "/images/projeler/ortak4.png",
+                    "/images/projeler/ortak1.png"
+                ],
+                "projeExp": "Ortak, React Native ve Expo ile geliştirilmiş bir mobil taksi paylaşım uygulamasıdır. Aynı hedefe giden kullanıcılar birbirini bulabilir, taksiyi paylaşabilir ve ücreti bölebilir. Rota oluşturma, yolcu eşleştirme, gerçek zamanlı ilanlar, cinsiyet tercihi filtreleri ve uygulama içi mesajlaşma özellikleri içerir."
+            },
+            {
+                "projeAd": "WhatToWatch",
+                "projeSite": "https://whattowatchh.netlify.app/",
+                "projeResimler": [
+                    "/images/projeler/wtw1.png",
+                    "/images/projeler/wtw2.png",
+                    "/images/projeler/mockups.png",
+                    "/images/projeler/wtw4.png"
+                ],
+                "projeExp": "WhatToWatch, kullanıcıların yeni film ve diziler keşfetmesine yardımcı olan bir öneri platformudur. Arama, detay görüntüleme ve kişisel izleme listeleri oluşturma için kullanıcı dostu ve responsive bir arayüz sunar. Proje halen geliştirme aşamasındadır; yeni özellikler ekleme ve hataları düzeltme üzerinde aktif olarak çalışıyorum."
+            },
+            {
+                "projeAd": "swoley-fit",
+                "projeSite": "https://generate-workout.netlify.app/",
+                "projeResimler": [
+                    "/images/projeler/swoley-fit.png",
+                    "/images/projeler/swoley-fit2.png",
+                    "/images/projeler/swoley-fit3.png"
+                ],
+                "projeExp": "Kullanıcıların hedeflerine göre antrenman programları oluşturan detaylı bir antrenman üretici uygulamasıdır."
+            },
+            {
+                "projeAd": "ilave.com",
+                "projeSite": "https://ilave.ozguryurt.dev/",
+                "projeResimler": [
+                    "/images/projeler/ilave1.png",
+                    "/images/projeler/ilave2.png",
+                    "/images/projeler/ilave3.png",
+                    "/images/projeler/ilave4.png"
+                ],
+                "projeExp": "Ilave hem online etkinlik bulma hem de etkinlik ilanı verme sitesidir. Kullanıcılar katılımcı eksiği olan aktiviteleri için ilan verebilir veya bir etkinliğe katılmak için mevcut ilanları arayabilir."
+            },
+            {
+                "projeAd": "Weather App",
+                "projeSite": "-",
+                "projeResimler": [
+                    "/images/projeler/weather_app1.png",
+                    "/images/projeler/weather_app2.png"
+                ],
+                "projeExp": "Bu proje, React ile tek bir arama inputu üzerinden harici bir REST API'den veri çekip ekranda gösterir."
+            },
+            {
+                "projeAd": "Ctis-256 project BILSUP",
+                "projeSite": "-",
+                "projeResimler": [
+                    "/images/projeler/bilsup1.png",
+                    "/images/projeler/bilsup2.png",
+                    "/images/projeler/bilsup3.png",
+                    "/images/projeler/bilsup4.png",
+                    "/images/projeler/bilsup5.png",
+                    "/images/projeler/bilsup6.png",
+                    "/images/projeler/bilsup7.png",
+                    "/images/projeler/bilsup8.png"
+                ],
+                "projeExp": "BILSUP online bir supplement mağazasıdır. Yerel market sahiplerinin mağaza oluşturmasına ve müşterilerin konuma göre filtrelenmiş supplement ürünleri satın almasına imkan tanır."
+            },
+            {
+                "projeAd": "Daily Task Recommender",
+                "projeSite": "-",
+                "projeResimler": [
+                    "/images/projeler/task1.png",
+                    "/images/projeler/task2.png"
+                ]
+            },
+            {
+                "projeAd": "Moto-market",
+                "projeSite": "-",
+                "projeResimler": [
+                    "/images/projeler/moto1.png",
+                    "/images/projeler/moto2.png"
+                ]
+            },
+            {
+                "projeAd": "List-app",
+                "projeSite": "-",
+                "projeResimler": [
+                    "/images/projeler/list1.png",
+                    "/images/projeler/list2.png",
+                    "/images/projeler/list3.png"
+                ]
+            }
+        ],
+        "yetenekler": [
+            {
+                "isim": "HTML",
+                "icon": "skill-icons:html"
+            },
+            {
+                "isim": "CSS",
+                "icon": "skill-icons:css"
+            },
+            {
+                "isim": "Javascript",
+                "icon": "skill-icons:javascript"
+            },
+            {
+                "isim": "Bootstrap",
+                "icon": "skill-icons:bootstrap"
+            },
+            {
+                "isim": "TailwindCSS",
+                "icon": "skill-icons:tailwindcss-dark"
+            },
+            {
+                "isim": "React",
+                "icon": "devicon:react"
+            },
+            {
+                "isim": "PHP",
+                "icon": "skill-icons:php-dark"
+            },
+            {
+                "isim": "NodeJS",
+                "icon": "skill-icons:nodejs-dark"
+            },
+            {
+                "isim": "MySQL",
+                "icon": "skill-icons:mysql-dark"
+            },
+            {
+                "isim": "Java",
+                "icon": "skill-icons:java-dark"
+            },
+            {
+                "isim": "C",
+                "icon": "devicon:c"
+            },
+            {
+                "isim": "Python",
+                "icon": "skill-icons:python-dark"
+            }
+        ],
+        "iletisim": [
+            {
+                "name": "Github",
+                "username": "@EmirCtis0",
+                "URL": "https://github.com/EmirCtis0"
+            },
+            {
+                "name": "Linkedin",
+                "username": "@Emirinaner",
+                "URL": "https://www.linkedin.com/in/emir-inaner-a303342a3/"
+            },
+            {
+                "name": "Mail",
+                "username": "emirinaner@gmail.com",
+                "URL": "mailto:emirinaner@gmail.com"
+            }
+        ]
+    }
 }

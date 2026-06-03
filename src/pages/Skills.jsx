@@ -6,6 +6,7 @@ import { useSelector } from 'react-redux'
 const Skills = () => {
     const siteData = useSelector(state => state.siteData.value)
     const siteDataIsLoading = useSelector(state => state.siteData.isLoading)
+    const page = siteData?.ui?.skills
 
     return (
         <div className="dark:bg-zinc-900 bg-neutral-100 w-full lg:px-24 py-28 px-8 min-h-screen">
@@ -13,16 +14,16 @@ const Skills = () => {
                 {/* Page Header */}
                 <div className="text-center mb-16 animate-fadeInTop">
                     <h1 className="text-4xl lg:text-5xl font-bold text-zinc-800 dark:text-white mb-4">
-                        Skills & <span className="text-indigo-600">Technologies</span>
+                        {page?.titlePrefix || "Skills &"} <span className="text-indigo-600">{page?.titleHighlight || "Technologies"}</span>
                     </h1>
                     <p className="text-zinc-500 dark:text-zinc-400 text-lg">
-                        Tools and technologies I work with
+                        {page?.description || "Tools and technologies I work with"}
                     </p>
                 </div>
 
                 {siteDataIsLoading ? (
                     <div className="flex justify-center items-center py-20">
-                        <div className="text-zinc-500 dark:text-zinc-400">Loading...</div>
+                        <div className="text-zinc-500 dark:text-zinc-400">{siteData?.ui?.common?.loading || "Loading..."}</div>
                     </div>
                 ) : (
                     <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
@@ -36,7 +37,7 @@ const Skills = () => {
                                 />
                             ))
                         ) : (
-                            <p className='text-center dark:text-white text-black col-span-full'>No skills found.</p>
+                            <p className='text-center dark:text-white text-black col-span-full'>{page?.empty || "No skills found."}</p>
                         )}
                     </div>
                 )}

@@ -6,6 +6,7 @@ import { useSelector } from 'react-redux'
 const ContactPage = () => {
     const siteData = useSelector(state => state.siteData.value)
     const siteDataIsLoading = useSelector(state => state.siteData.isLoading)
+    const page = siteData?.ui?.contact
 
     const contactIcons = {
         "Github": "mdi:github",
@@ -19,16 +20,16 @@ const ContactPage = () => {
                 {/* Page Header */}
                 <div className="text-center mb-16 animate-fadeInTop">
                     <h1 className="text-4xl lg:text-5xl font-bold text-zinc-800 dark:text-white mb-4">
-                        Get in <span className="text-indigo-600">Touch</span>
+                        {page?.titlePrefix || "Get in"} <span className="text-indigo-600">{page?.titleHighlight || "Touch"}</span>
                     </h1>
                     <p className="text-zinc-500 dark:text-zinc-400 text-lg">
-                        Feel free to reach out through any of these platforms
+                        {page?.description || "Feel free to reach out through any of these platforms"}
                     </p>
                 </div>
 
                 {siteDataIsLoading ? (
                     <div className="flex justify-center items-center py-20">
-                        <div className="text-zinc-500 dark:text-zinc-400">Loading...</div>
+                        <div className="text-zinc-500 dark:text-zinc-400">{siteData?.ui?.common?.loading || "Loading..."}</div>
                     </div>
                 ) : (
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-4 justify-items-center">
