@@ -76,6 +76,17 @@
         },
         "deneyimler": [
             {
+                "title": "Mobile Developer",
+                "company": "Güriş İnşaat Holding (Young Talent Program)",
+                "location": "Ankara, Turkey",
+                "period": "July 2026 - Present",
+                "responsibilities": [
+                    "Contributed to a Flutter-based enterprise mobile application by improving DMS and EMS module workflows.",
+                    "Fixed Android/iOS UI behavior issues and enhanced map marker visualization for interactive tracking.",
+                    "Integrated Firebase Push Notifications, Firebase Analytics, and Sentry for messaging, analytics, and error monitoring."
+                ]
+            },
+            {
                 "title": "Part Time React Native Developer",
                 "company": "Fugevet",
                 "location": "Ankara, Turkey",
@@ -114,7 +125,7 @@
         "projeler": [
             {
                 "projeAd": "Ortak - Taxi Sharing",
-                "projeSite": "https://ortak.live/",
+                "projeSite": "https://apps.apple.com/tr/app/ortak-taksiyi-payla%C5%9F/id6771323854",
                 "projeKapak": "/images/projeler/ortak-landing.png",
                 "projeResimler": [
                     "/images/projeler/ortak5.png",
@@ -352,6 +363,17 @@
         },
         "deneyimler": [
             {
+                "title": "Mobile Developer",
+                "company": "Güriş İnşaat Holding (Genç Yetenek Programı)",
+                "location": "Ankara, Türkiye",
+                "period": "Tem 2026 - Günümüz",
+                "responsibilities": [
+                    "Flutter tabanlı kurumsal mobil uygulamada DMS ve EMS modül iş akışlarını geliştirdim ve iyileştirdim.",
+                    "Android/iOS arayüz davranış sorunlarını çözdüm ve harita işaretçi görselleştirmelerini geliştirdim.",
+                    "Firebase Push Notifications, Firebase Analytics ve Sentry entegrasyonlarını gerçekleştirerek bildirim, kullanım takibi ve hata izleme altyapısını güçlendirdim."
+                ]
+            },
+            {
                 "title": "Part Time React Native Developer",
                 "company": "Fugevet",
                 "location": "Ankara, Türkiye",
@@ -390,7 +412,7 @@
         "projeler": [
             {
                 "projeAd": "Ortak - Taxi Sharing",
-                "projeSite": "https://ortak.live/",
+                "projeSite": "https://apps.apple.com/tr/app/ortak-taksiyi-payla%C5%9F/id6771323854",
                 "projeKapak": "/images/projeler/ortak-landing.png",
                 "projeResimler": [
                     "/images/projeler/ortak5.png",
