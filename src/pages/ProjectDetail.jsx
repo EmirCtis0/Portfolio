@@ -4,7 +4,6 @@ import { Link, useParams } from 'react-router-dom'
 
 import { useSelector } from 'react-redux'
 import NotFound from './NotFound'
-import StudioProject from '../components/StudioProject'
 
 // Swiperjs
 import { Navigation, Pagination } from 'swiper/modules'
@@ -33,20 +32,16 @@ const ProjectDetail = () => {
     return <NotFound />
   }
 
-  if (project.apps) {
-    return <StudioProject project={project} />
-  }
-
   return (
     <>
       <div className="dark:bg-zinc-900 bg-neutral-100 w-full lg:px-24 py-28 px-4 min-h-screen flex flex-col gap-5 justify-center items-center">
         <div className="flex flex-col justify-center items-center animate-fadeInTop">
-          <span className="text-white text-center text-xl font-bold">
+          <h1 className="text-zinc-900 dark:text-white text-center text-xl font-bold">
             {project.projeAd}
-          </span>
+          </h1>
           <span className="text-white text-center text-sm font-bold">
             {
-              project.projeSite !== "-" && <Link target='_blank' className='text-blue-500' to={project.projeSite}>{project.projeSite.replaceAll("https://", "")}</Link>
+              project.projeSite !== "-" && <Link target='_blank' rel='noopener noreferrer' className='text-blue-600 dark:text-blue-400' to={project.projeSite}>{project.projeSite.replaceAll("https://", "")}</Link>
             }
           </span>
         </div>
@@ -59,18 +54,28 @@ const ProjectDetail = () => {
           className='w-full max-w-sm md:max-w-lg animate-fadeInTop'
         >
           {
-            project.projeResimler?.map(function (image, index) {
+            project.projeResimler?.map(function (image) {
+              const { src, alt = "" } = typeof image === 'string' ? { src: image } : image
               return (
-                <SwiperSlide key={index} className='flex justify-center items-center py-6'>
-                  <img src={image} alt="" className='rounded mx-auto max-h-[70vh] w-auto object-contain' />
+                <SwiperSlide key={src} className='flex justify-center items-center py-6'>
+                  <img src={src} alt={alt} className='rounded mx-auto max-h-[70vh] w-auto object-contain' />
                 </SwiperSlide>
               )
             })
           }
         </Swiper>
-        <div className='text-white text-center text-xl font-bold'>
+        <p className='max-w-3xl text-zinc-900 dark:text-white text-center text-xl font-bold'>
           {project.projeExp}
-        </div>
+        </p>
+        {project.projeBaglantilar && (
+          <ul className="flex flex-wrap justify-center gap-x-5 gap-y-2 text-sm font-semibold">
+            {project.projeBaglantilar.map(({ label, url }) => (
+              <li key={url}>
+                <a href={url} target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline dark:text-blue-400">{label}</a>
+              </li>
+            ))}
+          </ul>
+        )}
       </div>
     </>
   )
