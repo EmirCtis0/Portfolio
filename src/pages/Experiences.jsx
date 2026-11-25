@@ -37,6 +37,7 @@ const Experiences = () => {
                                 location={exp.location}
                                 period={exp.period}
                                 responsibilities={exp.responsibilities}
+                                roles={exp.roles}
                             />
                         ))}
                     </div>

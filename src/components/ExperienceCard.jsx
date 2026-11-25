@@ -1,6 +1,6 @@
 import React from 'react'
 
-const ExperienceCard = ({ title, company, location, period, responsibilities, index }) => {
+const ExperienceCard = ({ title, company, location, period, responsibilities, roles, index }) => {
     return (
         <div 
             className="experience-card relative pl-8 pb-12 last:pb-0"
@@ -25,27 +25,52 @@ const ExperienceCard = ({ title, company, location, period, responsibilities, in
                     
                     {/* Title */}
                     <h3 className="text-xl font-bold text-zinc-800 dark:text-white mb-1">
-                        {title}
+                        {roles ? company : title}
                     </h3>
                     
                     {/* Company & Location */}
                     <p className="text-indigo-600 dark:text-indigo-400 font-semibold mb-4">
-                        {company} <span className="text-zinc-500 dark:text-zinc-400 font-normal">• {location}</span>
+                        {!roles && <>{company} </>}
+                        <span className="text-zinc-500 dark:text-zinc-400 font-normal">{!roles && "• "}{location}</span>
                     </p>
                     
                     {/* Responsibilities */}
-                    <ul className="space-y-2">
-                        {responsibilities.map((item, idx) => (
-                            <li key={idx} className="flex items-start gap-3 text-zinc-600 dark:text-zinc-300 text-sm leading-relaxed">
-                                <span className="mt-2 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>
-                                {item}
-                            </li>
-                        ))}
-                    </ul>
+                    {roles ? (
+                        <ol className="ml-1 border-l border-indigo-200 dark:border-indigo-900">
+                            {roles.map(role => (
+                                <li key={role.title} className="relative pl-5 pb-5 last:pb-0">
+                                    <span aria-hidden="true" className={`absolute -left-[5px] top-4 h-2.5 w-2.5 rounded-full border-2 border-indigo-500 ${role.current ? 'bg-indigo-500 ring-4 ring-indigo-500/20' : 'bg-white dark:bg-zinc-800'}`} />
+                                    <div className={role.current ? 'rounded-lg bg-indigo-50 px-4 py-3 dark:bg-indigo-950/40' : 'py-2'}>
+                                        <p className="text-xs font-semibold text-indigo-700 dark:text-indigo-300">{role.period}</p>
+                                        <h4 className="mt-1 font-semibold text-zinc-800 dark:text-white">{role.title}</h4>
+                                        {role.responsibilities && (
+                                            <details className="mt-2">
+                                                <summary className="w-fit cursor-pointer text-sm font-medium text-indigo-700 hover:underline dark:text-indigo-300">
+                                                    {role.detailsLabel}
+                                                </summary>
+                                                <Responsibilities items={role.responsibilities} />
+                                            </details>
+                                        )}
+                                    </div>
+                                </li>
+                            ))}
+                        </ol>
+                    ) : <Responsibilities items={responsibilities} />}
                 </div>
             </div>
         </div>
     )
 }
+
+const Responsibilities = ({ items }) => (
+    <ul className="mt-2 space-y-2">
+        {items.map(item => (
+            <li key={item} className="flex items-start gap-3 text-zinc-600 dark:text-zinc-300 text-sm leading-relaxed">
+                <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-indigo-500" />
+                {item}
+            </li>
+        ))}
+    </ul>
+)
 
 export default ExperienceCard

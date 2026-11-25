@@ -4,6 +4,7 @@ import { Link, useParams } from 'react-router-dom'
 
 import { useSelector } from 'react-redux'
 import NotFound from './NotFound'
+import StudioProject from '../components/StudioProject'
 
 // Swiperjs
 import { Navigation, Pagination } from 'swiper/modules'
@@ -18,7 +19,7 @@ const ProjectDetail = () => {
 
   const siteData = useSelector(state => state.siteData.value)
   const siteDataIsLoading = useSelector(state => state.siteData.isLoading)
-  const project = siteData?.projeler?.[id]
+  const project = siteData?.projeler?.find((entry, index) => (entry.id ?? String(index)) === id)
 
   if (siteDataIsLoading) {
     return (
@@ -30,6 +31,10 @@ const ProjectDetail = () => {
 
   if (project === undefined) {
     return <NotFound />
+  }
+
+  if (project.apps) {
+    return <StudioProject project={project} />
   }
 
   return (

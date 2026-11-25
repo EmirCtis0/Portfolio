@@ -76,14 +76,25 @@
         },
         "deneyimler": [
             {
-                "title": "Mobile Developer",
-                "company": "Güriş İnşaat Holding (Young Talent Program)",
+                "company": "Güriş İnşaat Holding",
                 "location": "Ankara, Turkey",
-                "period": "July 2026 - Present",
-                "responsibilities": [
-                    "Contributed to a Flutter-based enterprise mobile application by improving DMS and EMS module workflows.",
-                    "Fixed Android/iOS UI behavior issues and enhanced map marker visualization for interactive tracking.",
-                    "Integrated Firebase Push Notifications, Firebase Analytics, and Sentry for messaging, analytics, and error monitoring."
+                "period": "July 2026 – Present",
+                "roles": [
+                    {
+                        "title": "Young Talent Program · Mobile Developer",
+                        "period": "Started July 2026",
+                        "detailsLabel": "Work during the program",
+                        "responsibilities": [
+                            "Contributed to a Flutter-based enterprise mobile application by improving DMS and EMS module workflows.",
+                            "Fixed Android/iOS UI behavior issues and enhanced map marker visualization for interactive tracking.",
+                            "Integrated Firebase Push Notifications, Firebase Analytics, and Sentry for messaging, analytics, and error monitoring."
+                        ]
+                    },
+                    {
+                        "title": "Candidate Engineer",
+                        "period": "Current role",
+                        "current": true
+                    }
                 ]
             },
             {
@@ -215,6 +226,46 @@
                     "/images/projeler/list1.png",
                     "/images/projeler/list2.png",
                     "/images/projeler/list3.png"
+                ]
+            },
+            {
+                "id": "demor-labs",
+                "featured": true,
+                "projeAd": "Demor Labs",
+                "projeSite": "https://demorlabs.com/",
+                "summary": "My independent app studio for focused iPhone utilities that process files on-device.",
+                "projeExp": "At Demor Labs I handle product design, Flutter development, subscription integration, and App Store releases. The apps tackle specific everyday tasks and process selected files on-device.",
+                "detailLabel": "View project",
+                "siteLabel": "Visit the studio",
+                "appsLabel": "Apps on the App Store",
+                "storeLabel": "View on the App Store",
+                "technologies": [
+                    "Flutter",
+                    "iOS",
+                    "RevenueCat"
+                ],
+                "apps": [
+                    {
+                        "name": "Compress Video",
+                        "description": "Compress a video to a chosen file-size limit.",
+                        "image": "/images/projeler/demor-labs/compress-video.webp",
+                        "alt": "Compress Video result showing the original and compressed sizes",
+                        "url": "https://apps.apple.com/us/app/id6821949062"
+                    },
+                    {
+                        "name": "Chat Export",
+                        "description": "Turn chat screenshots into a shareable PDF.",
+                        "image": "/images/projeler/demor-labs/chat-export.webp",
+                        "alt": "Chat Export preview showing chat screenshots collected into a PDF",
+                        "url": "https://apps.apple.com/us/app/id6824953579"
+                    },
+                    {
+                        "name": "PhotoID",
+                        "description": "Prepare document photos with templates and framing guides.",
+                        "image": "/images/projeler/demor-labs/photoid.webp",
+                        "alt": "PhotoID portrait preview with document photo framing guides",
+                        "url": "https://apps.apple.com/us/app/id6831672066"
+                    }
                 ]
             }
         ],
@@ -363,14 +414,25 @@
         },
         "deneyimler": [
             {
-                "title": "Mobile Developer",
-                "company": "Güriş İnşaat Holding (Genç Yetenek Programı)",
+                "company": "Güriş İnşaat Holding",
                 "location": "Ankara, Türkiye",
-                "period": "Tem 2026 - Günümüz",
-                "responsibilities": [
-                    "Flutter tabanlı kurumsal mobil uygulamada DMS ve EMS modül iş akışlarını geliştirdim ve iyileştirdim.",
-                    "Android/iOS arayüz davranış sorunlarını çözdüm ve harita işaretçi görselleştirmelerini geliştirdim.",
-                    "Firebase Push Notifications, Firebase Analytics ve Sentry entegrasyonlarını gerçekleştirerek bildirim, kullanım takibi ve hata izleme altyapısını güçlendirdim."
+                "period": "Temmuz 2026 – Günümüz",
+                "roles": [
+                    {
+                        "title": "Genç Yetenek Programı · Mobil Uygulama Geliştirici",
+                        "period": "Temmuz 2026’da başladı",
+                        "detailsLabel": "Programdaki çalışmalar",
+                        "responsibilities": [
+                            "Flutter tabanlı kurumsal mobil uygulamada DMS ve EMS modül iş akışlarını geliştirdim ve iyileştirdim.",
+                            "Android/iOS arayüz davranış sorunlarını çözdüm ve harita işaretçi görselleştirmelerini geliştirdim.",
+                            "Firebase Push Notifications, Firebase Analytics ve Sentry entegrasyonlarını gerçekleştirerek bildirim, kullanım takibi ve hata izleme altyapısını güçlendirdim."
+                        ]
+                    },
+                    {
+                        "title": "Aday Mühendis",
+                        "period": "Güncel rol",
+                        "current": true
+                    }
                 ]
             },
             {
@@ -502,6 +564,46 @@
                     "/images/projeler/list1.png",
                     "/images/projeler/list2.png",
                     "/images/projeler/list3.png"
+                ]
+            },
+            {
+                "id": "demor-labs",
+                "featured": true,
+                "projeAd": "Demor Labs",
+                "projeSite": "https://demorlabs.com/",
+                "summary": "iPhone için cihaz üzerinde çalışan araçlar geliştirdiğim bağımsız uygulama stüdyom.",
+                "projeExp": "Demor Labs’te ürün tasarımı, Flutter geliştirme, abonelik entegrasyonu ve App Store yayın sürecini yürütüyorum. Uygulamalar tek bir günlük işi çözüyor ve seçilen dosyaları cihaz üzerinde işliyor.",
+                "detailLabel": "Projeyi incele",
+                "siteLabel": "Stüdyo sitesini aç",
+                "appsLabel": "App Store’daki uygulamalar",
+                "storeLabel": "App Store’da aç",
+                "technologies": [
+                    "Flutter",
+                    "iOS",
+                    "RevenueCat"
+                ],
+                "apps": [
+                    {
+                        "name": "Compress Video",
+                        "description": "Videoyu belirlenen dosya boyutu sınırına göre sıkıştırır.",
+                        "image": "/images/projeler/demor-labs/compress-video.webp",
+                        "alt": "Compress Video’da orijinal ve sıkıştırılmış dosya boyutlarını gösteren sonuç ekranı",
+                        "url": "https://apps.apple.com/tr/app/id6821949062"
+                    },
+                    {
+                        "name": "Chat Export",
+                        "description": "Sohbet ekran görüntülerini paylaşılabilir bir PDF’e dönüştürür.",
+                        "image": "/images/projeler/demor-labs/chat-export.webp",
+                        "alt": "Sohbet ekran görüntülerinin PDF’e aktarıldığı Chat Export önizlemesi",
+                        "url": "https://apps.apple.com/tr/app/id6824953579"
+                    },
+                    {
+                        "name": "PhotoID",
+                        "description": "Şablonlar ve kadraj kılavuzlarıyla belge fotoğrafları hazırlar.",
+                        "image": "/images/projeler/demor-labs/photoid.webp",
+                        "alt": "PhotoID’da belge fotoğrafı kadraj kılavuzlarını gösteren portre önizlemesi",
+                        "url": "https://apps.apple.com/tr/app/id6831672066"
+                    }
                 ]
             }
         ],
